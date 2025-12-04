@@ -62,3 +62,4 @@ def update(frame,u,Nx,Ny,cento_medios,cx,cy,dx,dy,alpha,dt,img,ax,fig,Nt):
 if __name__ == "__main__":
 
     main()
+
