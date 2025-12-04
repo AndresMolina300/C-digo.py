@@ -41,8 +41,7 @@ def update(frame,u,Nx,Ny,cento_medios,cx,cy,dx,dy,alpha,dt,img,ax,fig,Nt):
             u_new[i,j] = u[i,j] + alpha * dt * (
                 (u[i+1,j] - 2*u[i,j] + u[i-1,j]) / dx**2 +  
                 (u[i,j+1] - 2*u[i,j] + u[i,j-1]) / dy**2    
-            )
-            
+            )       
     u_new[0, :] = u_new[1, :]       
     u_new[-1, :] = u_new[-2, :]    
     u_new[:, 0] = u_new[:, 1]       
@@ -62,4 +61,5 @@ def update(frame,u,Nx,Ny,cento_medios,cx,cy,dx,dy,alpha,dt,img,ax,fig,Nt):
 if __name__ == "__main__":
 
     main()
+
 
