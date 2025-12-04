@@ -4,7 +4,7 @@ import matplotlib.animation as animation
 
 def main():
     Lx, Ly = 1.0, 1.0    
-    Nx, Ny = 50, 50     
+    Nx, Ny = 100, 100     
     dx = Lx / Nx          
     dy = Ly / Ny         
     alpha = 0.01         
@@ -60,4 +60,5 @@ def update(frame,u,Nx,Ny,cento_medios,cx,cy,dx,dy,alpha,dt,img,ax,fig,Nt):
     return [img]
 
 if __name__ == "__main__":
+
     main()
